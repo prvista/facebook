@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>to rhenheart ♡</title>
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <h1>will you be my valentine?</h1>
+      <!-- :3 -->
+      <p>answer no!</p>
+      <img src="images/kaykay.jpg" alt="Cute animated illustration." />
+      <section>
+        <button id="yesButton" onclick="nextPage()">Yes</button>
+        <button id="noButton" onmouseover="moveButton()">No</button>
+        <script>
+          function nextPage() {
+            window.location.href = "facebook.html";
+          }
+          function moveButton() {
+            var x =
+              Math.random() *
+              (window.innerWidth -
+                document.getElementById("noButton").offsetWidth);
+            var y =
+              Math.random() *
+              (window.innerHeight -
+                document.getElementById("noButton").offsetHeight);
+            document.getElementById("noButton").style.left = `${x}px`;
+            document.getElementById("noButton").style.top = `${y}px`;
+          }
+        </script>
+      </section>
+    </main>
+  </body>
+</html>
